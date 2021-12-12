@@ -75,8 +75,11 @@ WSGI_APPLICATION = 'dispensary_crm_final.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'dispensary_crm_final',
+        'USER': 'root',
+        'PASSWORD':'123456',
+        'default-character-set' : 'utf8'
     }
 }
 
